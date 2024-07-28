@@ -10,28 +10,11 @@ class ClientsController extends Controller
 
     public function index()
     {
-        $Obj = new Controller('clients');      
-        $Obj->index();
+         require_once APP . 'views/templates/header.php';
+         require_once APP . 'views/templates/menu.php';                
+         require_once APP . 'views/'.$this->table.'/index.php';
+         require_once APP . 'views/templates/footer.php';
     }
 
-    public function add(){
-      $Obj = new Controller('clients');
-      $Obj->add();
-    }
-
-    public function delete($field_id){
-      $Obj = new Controller('clients');
-      $Obj->delete($field_id);
-    }
-
-    public function edit($field_id){
-      $Obj = new Controller('clients');
-      $Obj->edit($field_id);
-    }
-
-    public function update(){
-      $Obj = new Controller('clients');
-      $Obj->update();
-    }
 
 }
