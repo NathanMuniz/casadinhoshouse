@@ -17,6 +17,11 @@ define('DB_PASS', 'root');
 define('DB_PORT', '3306');// 3306 or 5432
 define('DB_CHARSET', 'utf8mb4');
 
+
+define('URLSERVICE', 'localhost:8623');
+
+
+
 if(DEBUG) {
   error_reporting(E_ALL);
   ini_set('display_errors', 1);
