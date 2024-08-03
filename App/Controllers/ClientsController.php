@@ -12,7 +12,7 @@ class ClientsController extends Controller
     {
         require_once APP . 'views/templates/header.php';
         require_once APP . 'views/templates/navbar.php';                
-        require_once APP . 'views/products/index.php';
+        require_once APP . 'views/dashboard/index.php';
        //  require_once APP . 'views/templates/footer.php';
     }
 

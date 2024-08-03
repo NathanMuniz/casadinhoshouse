@@ -1,2 +1,7 @@
 composer.lock
 vendor/
+.env
+node_modules/
+package.json
+tsconfig.json
+yarn.lock
