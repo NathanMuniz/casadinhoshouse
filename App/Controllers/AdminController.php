@@ -18,7 +18,7 @@ class AdminController extends Controller
     }
     public function index()
     {
-         require_once APP . 'views/templates/header.php';
+         require_once APP . 'views/templates/headerAdmin.php';
          require_once APP . 'views/templates/navbar.php';
          require_once APP . 'views/templates/menu.php';                
          require_once APP . 'views/admin/index.php';
@@ -29,7 +29,7 @@ class AdminController extends Controller
     {
 
         if($_SERVER['REQUEST_METHOD'] == 'GET'){
-            require_once APP . 'views/templates/header.php';
+            require_once APP . 'views/templates/headerAdmin.php';
             require_once APP . 'views/admin/login.php';
            //  require_once APP . 'views/templates/footer.php';
         }
@@ -40,7 +40,7 @@ class AdminController extends Controller
 
             if($login['error']){
                 $errors[] = 'Login ou Senha Inválido';
-                require_once APP . 'views/templates/header.php';
+                require_once APP . 'views/templates/headerAdmin.php';
                 require_once APP . 'views/admin/login.php';
                 return;
                 exit;
